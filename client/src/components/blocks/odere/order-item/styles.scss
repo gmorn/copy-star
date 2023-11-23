@@ -1,0 +1,21 @@
+.order-items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.order-item {
+  border: 2px solid var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.order-item-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,42 @@
+.about-us-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.item {
+  min-width: 700px;
+  min-height: 300px;
+}
+
+.item-1 {
+  background: red;
+}
+
+.item-2 {
+  background: green;
+}
+
+.item-3 {
+  background: orange;
+}
+
+.item-4 {
+  background: purple;
+}

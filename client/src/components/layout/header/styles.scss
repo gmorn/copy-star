@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+
+  img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  p{
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.user-block {
+  position: absolute;
+  left: 0;
+}

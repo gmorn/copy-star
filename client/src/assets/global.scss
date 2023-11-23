@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  min-width: 100vh;
+}
+
+:root {
+  --color-main: #F0F8FF;
+  --color-text: #282828;
+  --color-accent: #9D81BA;
+  --color-red: #EE204D;
+}
