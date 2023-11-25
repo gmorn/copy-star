@@ -18,7 +18,7 @@ export default function OrderList() {
 		getUserOrders()
 	}, [])
 
-  const deleteOrder = (id) => {
+	const deleteOrder = (id) => {
 		const deleteOrder = async () => {
 			try {
 				const response = await OrderService.delete(id)
@@ -28,13 +28,17 @@ export default function OrderList() {
 			}
 		}
 		deleteOrder()
-  }
+	}
 
 	return (
 		<div className='order-list'>
-			{orders.map((item) => (
-				<OrderItem order={item} key={item.id} deleteOrder={deleteOrder}/>
-			))}
+			{Array.isArray(orders) && orders.length > 0 ? (
+				orders.map((item) => (
+					<OrderItem order={item} key={item.id} deleteOrder={deleteOrder} />
+				))
+			) : (
+				<p>У вас нет заказов</p>
+			)}
 		</div>
 	)
 }
