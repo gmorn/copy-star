@@ -1,3 +1,3 @@
 // потом переделаю в env
 
-export const hostName = 'http://localhost:80/api'
+export const hostName = 'https://copy-star-server.onrender.com'
