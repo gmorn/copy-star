@@ -1,10 +1,13 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-	user: 'postgres',
-	password: '1',
-	host: 'localhost',
+	user: 'demobd_user',
+	password: 'OBycP9gTFpA5eBBOvWy1Nu4j144LpWEG',
+	host: 'dpg-cla63tm2eqrc73962t5g-a.frankfurt-postgres.render.com',
 	port: 5432,
-	database: 'copy_star'
+	database: 'demobd',
+	ssl: {
+		rejectUnauthorized: false
+	}
 })
 pool
 	.connect()
